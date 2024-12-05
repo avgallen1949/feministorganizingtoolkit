@@ -1,0 +1,372 @@
+* {
+    font-size: 12px;
+    font-family: "Akkurat", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #E6E7E8;
+    margin-bottom: 3rem;
+}
+
+@font-face {
+    font-family: "Routed";
+    src: url(./routed-gothic-narrow.ttf);
+}
+
+@font-face {
+    font-family: "Akkurat";
+    src: url(./Akkurat-Normal.otf);
+}
+
+.side-menu-resources, .side-menu-education, .side-menu-safety, .side-menu-organizing {
+    width: 20%;
+    border-radius: 8px;
+    border: 1px solid black;
+    display: block;
+    position: fixed;
+    z-index: 2;
+    right: -17%;
+    height: 70vh;
+    bottom: 3%;
+    transition: right 500ms ease-out 20ms;
+    /* margin: auto; */
+  }
+  
+  .side-menu-resources:hover {
+    right: -3%;
+    background-color: #FC7ECD;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .side-menu-education:hover {
+    right: -3%;
+    background-color: #E3ED55;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .side-menu-safety:hover {
+    right: -3%;
+    background-color: #62A8E5;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .side-menu-organizing:hover {
+    right: -3%;
+    background-color: #FF665E;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .side-menu-title {
+    writing-mode: vertical-rl;
+    padding: 1rem;
+    font-size: 1.5rem;
+  }
+
+.page-title-resources, .page-title-organizing, .page-title-safety, .page-title-education {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    font-family: "Routed", Helvetica, sans-serif;
+    line-height: 2rem;
+}
+
+.page-title-resources, .page-title-organizing, .page-title-safety, .page-title-education {
+    text-decoration: none;
+    color: black;
+}
+
+a .page-title-organizing:hover {
+    color: #FF665E;
+    transition: .2s ease-in-out;
+}
+
+a .page-title-education:hover {
+    color: black;
+    background-color: #E3ED55;
+    transition: .2s ease-in-out;
+}
+
+a .page-title-safety:hover {
+    color: #62A8E5;
+    transition: .2s ease-in-out;
+}
+
+a .page-title-resources:hover {
+    color: #FC7ECD;
+    transition: .2s ease-in-out;
+}
+
+/* Menu */
+.menu-group {
+    display: block;
+    position: absolute;
+    top: 0rem;
+    right: 1rem;
+    z-index: 3;
+}
+
+.menu-resources, .menu-resources a, .menu-organizing, .menu-organizing a, .menu-education, .menu-education a, .menu-safety, .menu-safety a {
+    text-align: right;
+    font-size: 2rem;
+    font-family: "Routed", Helvetica, sans-serif;
+}
+
+.menu-resources a:hover {
+    color: #FC7ECD;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+
+.menu-education a:hover {
+    color: black;
+    background-color: #E3ED55;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.menu-safety a:hover {
+    color: #62A8E5;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.menu-organizing a:hover {
+    color: #FF665E;
+    cursor: pointer;
+    transition: .1s ease-in-out;
+}
+.menu-popup-resources, .menu-popup-education, .menu-popup-organizing, .menu-popup-safety {
+    text-align: right;
+}
+
+.menu-popup-resources a, .menu-popup-education a,.menu-popup-organizing a, .menu-popup-safety a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-family: "Routed", Helvetica, sans-serif;
+    line-height: 1.7rem;
+}
+
+.menu-popup-resources a:hover {
+    color: #FC7ECD;
+    transition: .1s ease-in-out;
+}
+
+.menu-popup-education a:hover {
+    color: black;
+    background-color: #E3ED55;
+    transition: .1s ease-in-out;
+}
+
+.menu-popup-organizing a:hover {
+    color: #FF665E;
+    transition: .1s ease-in-out;
+}
+
+.menu-popup-safety a:hover {
+    color: #62A8E5;
+    transition: .1s ease-in-out;
+}
+
+.section-name-resources {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: fit-content;
+    padding: .5rem;
+    background-color: #FC7ECD;
+}
+
+.section-name-education {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: fit-content;
+    padding: .5rem;
+    background-color: #E3ED55;
+}
+
+.section-name-organizing {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: fit-content;
+    padding: .5rem;
+    background-color: #FF665E;
+}
+
+.section-name-safety {
+    font-size: 1.3rem;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: fit-content;
+    padding: .5rem;
+    background-color: #62A8E5;
+}
+
+
+.top-section {
+    width: 50%;
+    margin: auto;
+    margin-top: 10rem;
+}
+
+.title-section {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.title {
+    font-size: 5.5rem;
+}
+
+.section-img {
+    height: 25rem;
+}
+
+.interview  {
+    height: 10rem;
+    margin-left: -2rem;
+    margin-bottom: -2rem;
+}
+
+.about-section {
+    width: 50%;
+    margin: auto;
+    margin-top: 4rem;
+}
+
+.about {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: left;
+    width: 75%;
+}
+
+.body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+    margin-top: 10rem;
+    column-gap: 2rem;
+}
+
+.text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.q {
+    font-family: "Routed", Helvetica, sans-serif;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+}
+
+.q2 {
+    font-family: "Routed", Helvetica, sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.text-image-desktop {
+    display: block;
+    object-fit: scale-down;
+    max-width: 100%;
+}
+
+.pullout-text {
+    font-family: "Routed", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    line-height: 2.4rem;
+}
+
+strong {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color:#FF665E;
+}
+
+li {
+    font-size: 1.3rem;
+}
+
+.top {
+    text-decoration: none;
+    color: black;
+}
+
+.top:hover {
+    text-decoration: underline;
+}
+
+  /* smartphone */
+  @media only screen and (max-width: 1000px), (orientation: portrait) {
+    .text-image-desktop {
+        display: none;
+    }
+
+    .body {
+        grid-template-columns: 1fr;
+        width: 80%;
+        margin: auto;
+        margin-top: 5rem;
+    }
+
+    .pullout-text {
+        display: none;
+    }
+
+    a .link {
+        color: black;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    .side-menu-organizing, .side-menu-education, .side-menu-resources, .side-menu-safety {
+        display: none;
+    }
+
+    .top-section {
+        width: 80%;
+        margin: auto;
+        margin-top: 10rem;
+    }
+    
+    .title-section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    .title {
+        font-size: 3rem;
+    }
+    
+    .section-img {
+        height: 20rem;
+        margin: auto;
+        width: auto;
+    }
+    
+    .interview  {
+        height: 8rem;
+        margin-left: -1rem;
+        margin-bottom: -2rem;
+    }
+    
+    .about-section {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .about {
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+        text-align: left;
+        width: 100%;
+    }
+}

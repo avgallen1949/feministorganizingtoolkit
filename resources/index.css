@@ -1,0 +1,342 @@
+* {
+    font-size: 12px;
+    font-family: "Xanh Mono", Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    background-color: #E6E7E8;
+    width: 100vw;
+    margin: 0;
+}
+
+html, body {
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+  }
+  
+
+@font-face {
+    font-family: "Routed";
+    src: url(./routed-gothic-narrow.ttf);
+}
+
+@font-face {
+    font-family: "Akkurat";
+    src: url(./Akkurat-Normal.otf);
+}
+
+strong {
+    font-family: "Akkurat", sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+/* Section structure */
+
+#organizing, #education, #resources, #safety {
+    display: grid;
+    grid-template-rows: 15rem 1fr 15rem;  /
+    
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* Background colors */
+#organizing { background-color: #FF665E; }
+#education { background-color: #E3ED55; }
+#resources { background-color: #FC7ECD; }
+#safety { background-color: #62A8E5; }
+#about {
+    background: rgb(230,231,232);
+    background: linear-gradient(0deg, rgba(230,231,232,1) 79%, rgba(98,168,229,1) 98%);
+}
+#landing {
+    background: rgb(230,231,232);
+    background: linear-gradient(180deg, rgba(230,231,232,1) 80%, rgba(255,102,94,1) 100%);
+}
+
+/* Landing page styles */
+#landing1{
+    display: block;
+    position: fixed;
+    top: -12vh;
+    margin: 1rem;
+    font-size: 17vw;
+    font-family: "Routed", sans-serif;
+}
+
+#landing2{
+    display: block;
+    position: fixed;
+    top: 16vh;
+    right: 3rem;
+    margin: 1rem;
+    font-size: 17vw;
+    font-family: "Routed", sans-serif;
+    text-align: right;
+}
+
+#landing3{
+    display: block;
+    position: fixed;
+    top: 43vh;
+    left: 3rem;
+    margin: 1rem;
+    font-size: 17vw;
+    font-family: "Routed", sans-serif;
+}
+
+#landing-img {
+    
+}
+
+/* About section */
+#about {
+    overflow: auto;
+    margin-bottom: 7rem;
+}
+
+.about-top {
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+    height: 10vh;
+    align-items: start;
+    padding-left: 1rem;
+}
+
+.about-content {
+    display: grid;
+    row-gap: 3rem;
+    grid-template-columns: 30% 70%;
+    width: 50vw;
+    margin: auto;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: "Akkurat", sans-serif;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+em {
+    font-family: "Akkurat", sans-serif;
+    font-size: 1.5rem;
+}
+
+.no-mobile, .text {
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: "Akkurat", sans-serif;
+}
+
+.larger {
+    font-size: 2rem;
+    font-family: "Routed", sans-serif;
+    text-transform: uppercase;
+}
+
+/* Arrows */
+
+.mono-arrow {
+    font-family: Calibri, sans-serif;
+    font-size: 4rem;
+}
+
+/* Page link buttons */
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; 
+    width: 100%; 
+}
+
+.content-box {
+    text-align: center;
+    margin: 1rem;
+    font-size: 2rem;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 2rem;
+    font-family: "Akkurat", sans-serif;
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-1deg); }
+    40% { transform: rotate(1deg); }
+    60% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.content-box:hover {
+    animation: wiggle .75s infinite;
+    cursor: pointer;
+    background-color: #E6E7E8;
+}
+
+/* Top and Bottom Sections */
+.top {
+    display: grid;
+    grid-template-columns: 48% 4% 48%;
+    align-items: start;
+}
+
+.section-title-about, .section-title {
+    font-size: 4vw;
+    line-height: 4vw;
+    margin-left: 1rem;
+    /* padding-top: 1rem; */
+    font-family: "Routed", Arial, Helvetica, sans-serif;
+    text-align: left;
+
+}
+
+.arrow a {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    padding-top: 1rem;
+}
+
+.bottom {
+    margin: auto;
+    text-align: center;
+    width: 100vw;
+    /* height: 10rem; */
+}
+
+.bottom a {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    padding-top: 7.4rem;
+}
+
+/* Centering arrow inside the top and bottom */
+.arrow, .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrow a:hover, .bottom a:hover {
+    color: #E6E7E8;
+}
+
+#about a:hover {
+    color: #E6E7E8;
+}
+
+#about .menu a:hover, #about .menu-popup a:hover {
+    color: #E6E7E8;
+}
+
+/* Menu */
+.menu-group {
+    margin-right: 1rem;
+    display: block;
+}
+
+.menu, .menu a {
+    text-align: right;
+    font-size: 2rem;
+    font-family: "Routed", Helvetica, sans-serif;
+}
+
+.menu a:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.menu-popup {
+    text-align: right;
+}
+
+.menu-popup a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
+    font-family: "Routed", Helvetica, sans-serif;
+    line-height: 1.7rem;
+}
+
+.menu-popup a:hover {
+    color: white;
+    transition: .1s ease-in-out;
+}
+
+a .content-box {
+    color: black;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+  /* smartphone */
+  @media only screen and (max-width: 1000px), (orientation: portrait) {
+    .section-title, .section-title-about {
+        font-size: 3rem;
+        line-height: 3.2rem;
+        margin-left: .5rem;
+    }
+
+    .content {
+        width: 90%;
+        margin: auto;
+        height: 90%; 
+
+    }
+    
+    .content-box {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+
+    .about-content {
+        display: grid;
+        row-gap: 3rem;
+        grid-template-columns: 1fr;
+        width: 90vw;
+        margin: auto;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-family: "Akkurat", sans-serif;
+        margin-top: 3rem;
+        height: fit-content;
+    }
+    .mono-arrow {
+        /* display: none; */
+    }
+
+    .landing-top img {
+        height: 5rem;
+        margin-top: -5rem;
+    }
+    
+    .landing-top p {
+        font-size: 4rem;
+        font-family: "Routed", sans-serif;
+        line-height: 4rem;
+        margin-top: 10vh;
+    }
+
+    .no-mobile {
+        /* display: none; */
+    }
+    }
