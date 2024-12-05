@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Recs</title>
+    <link rel="stylesheet" href="./resources/pages.css">
+
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./list.js"></script>
+    </head>
+
+    <body>
+            <a href="./index.html#education"><div class="page-title-education">FEMINIST<br>ORGANIZING<br>TOOLKIT</div></a>
+            <div class="menu-group">
+                <div class="menu-education"><a>MENU</a></div>
+            <div class="menu-popup-education">
+                <a href="./index.html#organizing">ORGANIZING</a>
+                <br><a href="./index.html#education">EDUCATION</a>
+                <br><a href="./index.html#resources">RESOURCES</a>
+                <br><a href="./index.html#safety">SAFETY</a>
+                <br><a href="./index.html#about">ABOUT</a>
+            </div>
+            </div>
+
+        <div class="top-section">
+            <div class="section-name-education">POLITICAL EDUCATION</div>
+            <div class="title-section">
+                <div class="title recs">
+                    Our Recs
+                </div>
+                <div></div>
+                <div><img class="section-img" src="./resources/Education_F.gif"></div>
+            </div>
+            </div>
+            <div class="about-section">
+                </div> 
+            </div>
+
+
+
+
+        <div class="reading-list">
+
+              
+              <div id="filter">
+                <a filter="all" selected>All (<span class="count_all"> </span>)</a> 
+                <a filter="abortion">Abortion (<span class="count_abortion"> </span>)</a> 
+                <a filter="education">Educational Resources (<span class="count_education"></span>)</a> 
+                
+                <a filter="org">Organizations (<span class="count_org"></span>)</a> 
+                <a filter="organization">Organizational Resources (<span class="count_organization"></span>)</a> 
+
+              </div>
+              
+                <div id="_list">
+        </div>
+        </div>
+    </body>
+    <script>
+        $('.menu-popup-education').hide();
+        $('.menu-education').on('click', function(){
+        $('.menu-popup-education').toggle();
+    });
+    </script>
+    <script src="jquery.min.js" type="text/javascript"></script>
+    </html>

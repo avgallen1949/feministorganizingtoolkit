@@ -137,7 +137,8 @@ section {
         position: relative;
         width: 90%;
         margin: auto;
-        top: 25vh;
+        margin-top: 2rem;
+        text-align: left;
       }
 
       .container-desktop {
@@ -145,29 +146,9 @@ section {
       }
 
     .line {
-      font-size: 5.5rem; /* Reduced size for mobile */
+      font-size: 3.5rem; /* Reduced size for mobile */
     }
 
-    .line:nth-child(1) img {
-      display: none;
-    }
-
-    button {
-      width: 8rem;
-      height: 8rem;
-      font-size: 6rem; /* Adjusted arrow size for mobile */
-      display: block;
-      margin: auto;
-      font-family: Calibri, Arial, Helvetica, sans-serif;
-      margin-top: 3rem;
-    }
-
-    button:hover {
-        cursor: pointer;}
-
-    .mobile-only {
-        display: contents;
-      }
   }
 /* About section */
 #about {

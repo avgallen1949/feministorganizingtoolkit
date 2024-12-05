@@ -225,6 +225,10 @@ a .page-title-resources:hover {
     font-size: 5.5rem;
 }
 
+.recs {
+    margin-top: 2rem;
+}
+
 .section-img {
     height: 25rem;
 }
@@ -303,6 +307,59 @@ li {
 .top:hover {
     text-decoration: underline;
 }
+  
+  #filter {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 2rem;
+  }
+  
+  #filter a {
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 0.25em 0.5em;
+    font-size: 1rem;
+    border: 1px solid black;
+  }
+  
+  #filter a:hover, #filter a[selected] {
+    border: 1px solid black;
+    background: #E3ED55;
+    cursor: pointer;
+  }
+
+
+  #_list {
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 60%;
+  }
+
+  #_list a {
+    text-decoration: none;
+
+  }
+  
+  .r ._title h2 {
+    font-weight: normal;
+    font-size: 2rem;
+    border: 1px solid black;
+    border-radius: 8px;
+    margin: .5rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+  }
+
+  .r ._title h2:hover {
+    background-color: #E3ED55;
+  }
+
+
 
   /* smartphone */
   @media only screen and (max-width: 1000px), (orientation: portrait) {
@@ -369,4 +426,17 @@ li {
         text-align: left;
         width: 100%;
     }
+
+    #_list {
+        display: flex;
+        margin: auto;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 90%;
+      }
+    
+      #filter {
+        width: 90%;
+        margin-top: 2rem;
+      }
 }
