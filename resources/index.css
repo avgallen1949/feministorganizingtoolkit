@@ -64,40 +64,111 @@ section {
 }
 
 /* Landing page styles */
-#landing1{
-    display: block;
-    position: fixed;
-    top: -12vh;
-    margin: 1rem;
-    font-size: 17vw;
-    font-family: "Routed", sans-serif;
+.container-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    margin: auto;
+    margin-top: 8rem;
+  }
+
+.container-mobile {
+    display: none;
 }
 
-#landing2{
-    display: block;
-    position: fixed;
-    top: 16vh;
-    right: 3rem;
-    margin: 1rem;
-    font-size: 17vw;
-    font-family: "Routed", sans-serif;
-    text-align: right;
-}
+  .line {
+    width: 100%;
+    font-size: 12vw;
+    line-height: 12vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Routed";
+  }
 
-#landing3{
-    display: block;
-    position: fixed;
-    top: 43vh;
-    left: 3rem;
-    margin: 1rem;
-    font-size: 17vw;
-    font-family: "Routed", sans-serif;
-}
+  .line:nth-child(1) {
+    justify-content: center;
+  }
 
-#landing-img {
-    
-}
+  .line:nth-child(1) img {
+    height: 5vw; /* Adjusted image height */
+    margin-left: 1rem;
+    justify-content: center;
+  }
 
+  .line:nth-child(2) {
+    justify-content: center;
+  }
+
+  .line:nth-child(3) {
+    justify-content: center;
+  }
+
+  .line:nth-child(3) button {
+    display: inline-block;
+    width: 8vw;
+    height: 8vw; /* Larger button */
+    border-radius: 8px;
+    border: 2px solid black;
+    font-size: 10rem; /* Increased font size for arrow */
+    font-family: Calibri, serif;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: 3rem;
+  }
+
+  button:hover {
+    color:#FF665E;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .container-mobile {
+        display: block;
+        position: relative;
+        width: 90%;
+        margin: auto;
+        top: 25vh;
+      }
+
+      .container-desktop {
+        display: none;
+      }
+
+    .line {
+      font-size: 5.5rem; /* Reduced size for mobile */
+    }
+
+    .line:nth-child(1) img {
+      display: none;
+    }
+
+    button {
+      width: 8rem;
+      height: 8rem;
+      font-size: 6rem; /* Adjusted arrow size for mobile */
+      display: block;
+      margin: auto;
+      font-family: Calibri, Arial, Helvetica, sans-serif;
+      margin-top: 3rem;
+    }
+
+    button:hover {
+        cursor: pointer;}
+
+    .mobile-only {
+        display: contents;
+      }
+  }
 /* About section */
 #about {
     overflow: auto;
