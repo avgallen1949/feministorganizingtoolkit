@@ -312,7 +312,7 @@ li {
 
     .body {
         grid-template-columns: 1fr;
-        width: 80%;
+        width: 90%;
         margin: auto;
         margin-top: 5rem;
     }
