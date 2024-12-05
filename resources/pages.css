@@ -67,6 +67,27 @@ html {
     font-size: 1.5rem;
   }
 
+  .contents {
+    padding-left: 2rem;
+    width: 20rem;
+  }
+
+  .contents a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+  }
+
+  .contents a:hover {
+    text-decoration: underline;
+  }
+
+  .page-link a{
+    text-decoration: none;
+    color: black;
+  }
+
 .page-title-resources, .page-title-organizing, .page-title-safety, .page-title-education {
     display: block;
     position: absolute;
@@ -101,6 +122,12 @@ a .page-title-safety:hover {
 a .page-title-resources:hover {
     color: #FC7ECD;
     transition: .2s ease-in-out;
+}
+
+.pages-link {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.746);
 }
 
 /* Menu */
@@ -223,6 +250,7 @@ a .page-title-resources:hover {
 
 .title {
     font-size: 5.5rem;
+    line-height: 5.5rem;
 }
 
 .recs {
@@ -237,6 +265,12 @@ a .page-title-resources:hover {
     height: 10rem;
     margin-left: -2rem;
     margin-bottom: -2rem;
+}
+
+.solidarity  {
+    height: 10rem;
+    margin-bottom: -4rem;
+    transform: rotate(-3deg);
 }
 
 .about-section {
