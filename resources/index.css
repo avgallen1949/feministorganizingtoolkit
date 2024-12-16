@@ -1,22 +1,8 @@
 * {
-    font-size: 12px;
-    font-family: "Xanh Mono", Helvetica, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-    background-color: #E6E7E8;
-    width: 100vw;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-html, body {
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    scroll-behavior: smooth;
-  }
-  
 
 @font-face {
     font-family: "Routed";
@@ -28,197 +14,206 @@ html, body {
     src: url(./Akkurat-Normal.otf);
 }
 
-strong {
-    font-family: "Akkurat", sans-serif;
-    font-size: 2.4rem;
-    text-transform: uppercase;
+html, body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-/* Section structure */
+body {
+    font-family: "Routed", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
 
-#organizing, #education, #resources, #safety {
-    display: grid;
-    grid-template-rows: 15rem 1fr 15rem;  /
-    
+h1 {
+    font-size: 10vw;
+    line-height: 9vw;
+}
+
+h4 {
+    position: absolute;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
+}
+
+.container {
+    width: 100vw;
+    height: 600vh; 
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    scroll-behavior: smooth !important;
 }
 
 section {
     width: 100vw;
-    height: 100vh;
-    margin: 0;
+    height: 88vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    scroll-snap-align: start;
+    display: flex;
+    color: black;
+    font-size: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
+section a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-size: 3rem;
+    z-index: 1;
+}
 
-/* Background colors */
-#organizing { background-color: #FF665E; }
-#education { background-color: #E3ED55; }
-#resources { background-color: #FC7ECD; }
-#safety { background-color: #62A8E5; }
+section a:hover {
+    color: rgba(255, 255, 255, 0.812);
+}
+
+#landing a {
+    position: relative !important;
+    border: 1px black solid;
+    border-radius: 8px;
+    width: fit-content;
+    margin: auto;
+    padding: 0 2.5rem;
+    margin-top: 3rem;
+}
+
+#landing a:hover {
+    background-color: black;
+    color: white;
+}
+
+#landing {
+    height: 100vh;
+    align-items: center !important;
+}
+
+#footer {
+    height: 10vh;
+    overflow: hidden;
+    background-color: rgb(230,231,232);
+}
+
+#footer h4 {
+    font-size: 1rem !important;
+    bottom: 1rem;
+}
+
+#organizing { background-color: #FF665E; z-index: 0; }
+#education { background-color: #E3ED55; z-index: 0;}
+#resources { background-color: #FC7ECD; z-index: 0;}
+#safety { background-color: #62A8E5; z-index: 0;}
 #about {
     background: rgb(230,231,232);
-    background: linear-gradient(0deg, rgba(230,231,232,1) 79%, rgba(98,168,229,1) 98%);
+    background: linear-gradient(0deg, rgba(230,231,232,1) 88%, rgba(98,168,229,1) 100%);
 }
+
 #landing {
     background: rgb(230,231,232);
-    background: linear-gradient(180deg, rgba(230,231,232,1) 80%, rgba(255,102,94,1) 100%);
+    background: linear-gradient(180deg, rgba(230,231,232,1) 70%, rgba(255,102,94,1) 100%);
 }
 
-/* Landing page styles */
-.container-desktop {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-    margin: auto;
-    margin-top: 8rem;
-  }
-
-.container-mobile {
-    display: none;
+#organizing {
+    background-image: url("Ways_Of_Organizing_F.gif");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position: left bottom;
 }
 
-  .line {
-    width: 100%;
-    font-size: 12vw;
-    line-height: 12vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: "Routed";
-  }
-
-  .line:nth-child(1) {
-    justify-content: center;
-  }
-
-  .line:nth-child(1) img {
-    height: 5vw; /* Adjusted image height */
-    margin-left: 1rem;
-    justify-content: center;
-  }
-
-  .line:nth-child(2) {
-    justify-content: center;
-  }
-
-  .line:nth-child(3) {
-    justify-content: center;
-  }
-
-  .line:nth-child(3) button {
-    display: inline-block;
-    width: 8vw;
-    height: 8vw; /* Larger button */
-    border-radius: 8px;
-    border: 2px solid black;
-    font-size: 10rem; /* Increased font size for arrow */
-    font-family: Calibri, serif;
-    background: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 2rem;
-    margin-top: 3rem;
-  }
-
-  button:hover {
-    color:#FF665E;
-  }
-
-  .mobile-only {
-    display: none;
-  }
-
-  @media (max-width: 768px) {
-    .container-mobile {
-        display: block;
-        position: relative;
-        width: 90%;
-        margin: auto;
-        margin-top: 2rem;
-        text-align: left;
-      }
-
-      .container-desktop {
-        display: none;
-      }
-
-    .line {
-      font-size: 3.5rem; /* Reduced size for mobile */
-    }
-
-  }
-/* About section */
-#about {
-    overflow: auto;
-    margin-bottom: 7rem;
+#education {
+    background-image: url("Education_F.gif");
+    background-repeat: no-repeat;
+    background-size: 400px;
+    background-position: left bottom;
 }
 
-.about-top {
-    display: grid;
-    grid-template-columns: 48% 4% 48%;
-    height: 10vh;
-    align-items: start;
-    padding-left: 1rem;
+#resources {
+    background-image: url("Resources_F.gif");
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: left bottom;
 }
 
-.about-content {
-    display: grid;
-    row-gap: 3rem;
-    grid-template-columns: 30% 70%;
-    width: 50vw;
-    margin: auto;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    font-family: "Akkurat", sans-serif;
-    margin-top: 3rem;
-    padding-bottom: 3rem;
+#safety {
+    background-image: url("Safety-Networks_F.gif");
+    background-repeat: no-repeat;
+    background-size: 370px;
+    background-position: left bottom;
 }
 
-em {
-    font-family: "Akkurat", sans-serif;
+
+
+.menu-group {
+    display: block;
+    position: fixed;
+    right: 2rem;
+    z-index: 1;
+    top: 1rem;
+}
+
+.menu, .menu a {
+    text-align: right;
     font-size: 1.5rem;
+    font-family: "Routed", Helvetica, sans-serif;
 }
 
-.no-mobile, .text {
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    font-family: "Akkurat", sans-serif;
+.menu a:hover {
+    color: rgba(255, 255, 255, 0.808);
+    cursor: pointer;
 }
 
-.larger {
-    font-size: 2rem;
-    font-family: "Routed", sans-serif;
-    text-transform: uppercase;
+.menu-popup {
+    text-align: right;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
 }
 
-/* Arrows */
-
-.mono-arrow {
-    font-family: Calibri, sans-serif;
-    font-size: 4rem;
+.menu-popup a {
+    text-decoration: none;
+    color: black;
+    font-family: "Routed", Helvetica, sans-serif;
 }
 
-/* Page link buttons */
+.menu-popup a:hover {
+    color: rgba(255, 255, 255, 0.808);
+    transition: .1s ease-in-out;
+}
+
 .content {
     display: flex;
+    position: static;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%; 
-    width: 100%; 
+    gap: 2rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
 }
 
 .content-box {
     text-align: center;
-    margin: 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     border: 2px solid black;
     border-radius: 8px;
-    padding: 2rem;
     font-family: "Akkurat", sans-serif;
+    padding: 1rem;
+}
+
+strong {
+    font-family: "Akkurat", sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 @keyframes wiggle {
@@ -233,162 +228,73 @@ em {
 .content-box:hover {
     animation: wiggle .75s infinite;
     cursor: pointer;
-    background-color: #E6E7E8;
+    background-color: rgba(255, 255, 255, 0.724);
 }
 
-/* Top and Bottom Sections */
-.top {
+#about {
+    overflow: auto;
+}
+
+.about-content {
     display: grid;
-    grid-template-columns: 48% 4% 48%;
-    align-items: start;
-}
-
-.section-title-about, .section-title {
-    font-size: 4vw;
-    line-height: 4vw;
-    margin-left: 1rem;
-    /* padding-top: 1rem; */
-    font-family: "Routed", Arial, Helvetica, sans-serif;
-    text-align: left;
-
-}
-
-.arrow a {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-    padding-top: 1rem;
-}
-
-.bottom {
+    row-gap: 3rem;
+    grid-template-columns: 30% 70%;
+    width: 60vw;
     margin: auto;
-    text-align: center;
-    width: 100vw;
-    /* height: 10rem; */
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    font-family: "Akkurat", sans-serif;
+    margin-top: 9rem;
 }
 
-.bottom a {
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    text-decoration: none;
-    color: black;
-    padding-top: 7.4rem;
-}
-
-/* Centering arrow inside the top and bottom */
-.arrow, .bottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.arrow a:hover, .bottom a:hover {
-    color: #E6E7E8;
-}
-
-#about a:hover {
-    color: #E6E7E8;
-}
-
-#about .menu a:hover, #about .menu-popup a:hover {
-    color: #E6E7E8;
-}
-
-/* Menu */
-.menu-group {
-    margin-right: 1rem;
-    display: block;
-}
-
-.menu, .menu a {
-    text-align: right;
-    font-size: 2rem;
-    font-family: "Routed", Helvetica, sans-serif;
-}
-
-.menu a:hover {
-    color: white;
-    cursor: pointer;
-}
-
-.menu-popup {
-    text-align: right;
-}
-
-.menu-popup a {
+.larger {
     font-size: 1.5rem;
-    text-decoration: none;
-    color: black;
-    font-family: "Routed", Helvetica, sans-serif;
-    line-height: 1.7rem;
+    font-family: "Routed", sans-serif;
+    text-transform: uppercase;
 }
 
-.menu-popup a:hover {
-    color: white;
-    transition: .1s ease-in-out;
+.text {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-family: "Akkurat", sans-serif;
+    text-align: left;
 }
 
-a .content-box {
-    color: black;
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-  /* smartphone */
-  @media only screen and (max-width: 1000px), (orientation: portrait) {
-    .section-title, .section-title-about {
-        font-size: 3rem;
-        line-height: 3.2rem;
-        margin-left: .5rem;
-    }
-
-    .content {
-        width: 90%;
-        margin: auto;
-        height: 90%; 
-
+/* smartphone */
+@media only screen and (max-width: 1000px), (orientation: portrait) {
+    h1 {
+        font-size: 14vw;
+        line-height: 13vw;
     }
     
-    .content-box {
-        font-size: 1rem;
+        #landing a {
         padding: 1rem;
     }
 
     .about-content {
-        display: grid;
-        row-gap: 3rem;
         grid-template-columns: 1fr;
         width: 90vw;
-        margin: auto;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        font-family: "Akkurat", sans-serif;
-        margin-top: 3rem;
-        height: fit-content;
-    }
-    .mono-arrow {
-        /* display: none; */
     }
 
-    .landing-top img {
-        height: 5rem;
-        margin-top: -5rem;
-    }
-    
-    .landing-top p {
-        font-size: 4rem;
-        font-family: "Routed", sans-serif;
-        line-height: 4rem;
-        margin-top: 10vh;
+    .content {
+        width: 90vw;
     }
 
-    .no-mobile {
-        /* display: none; */
+    .text {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .menu {
+        text-decoration: underline;
+    }
+
+    #organizing, #education, #resources, #safety {
+        background-image: url();
     }
     }
