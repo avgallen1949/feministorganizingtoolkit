@@ -52,7 +52,7 @@ a:hover {
 }
 
 #landing-arrow {
-    font-family: "Routed";
+    font-family: Calibri, Arial, Helvetica, sans-serif;
     font-size: 20rem;
     position: absolute;
     bottom: -2rem;
@@ -346,20 +346,13 @@ a:hover {
 
 
   /* smartphone */
-  @media only screen and (max-width: 500px), (orientation: portrait) {
+  @media only screen and (max-width: 600px), (orientation: portrait) {
     /*about*/
 #about-top-color {
-    width: 100vw;
     height: 2rem;
-    position: absolute;
-    top: 0;
-    background-color: #a2ceee;
-    z-index: 1;
 }
 
 #about-title {
-    align-items: start;
-    font-family: "Routed", Arial, Helvetica, sans-serif;
     font-size: 6rem;
     line-height: 6rem;
 }
@@ -367,12 +360,8 @@ a:hover {
 #about-description {
     grid-column-start: 1;
     grid-column-end: 5;
-    font-family: "Akkurat", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    position: absolute;
     bottom: 1rem;
-    padding-left: 3rem;
-    align-content: end;
 }
 
 #smaller {
