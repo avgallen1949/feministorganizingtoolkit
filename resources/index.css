@@ -8,6 +8,7 @@ html {
     margin: 0;
     width: 100vw;
     overflow-x: hidden;
+    left: 0;
 }
 
 html, body {
@@ -45,8 +46,8 @@ a:hover {
 
 #landing-title {
     font-family: "Routed", Arial, Helvetica, sans-serif;
-    font-size: 20rem;
-    line-height: 18rem;
+    font-size: 15vw;
+    line-height: 15vw;
     padding-left: 2rem;
 }
 
@@ -463,12 +464,12 @@ a:hover {
 
 /*landing*/
 
-#landing-title {
+/* #landing-title {
     font-family: "Routed", Arial, Helvetica, sans-serif;
     font-size: 5rem;
     line-height: 5rem;
     padding-left: 2rem;
-}
+} */
 
 #landing-arrow {
     font-family: Calibri, Arial, Helvetica, sans-serif;
