@@ -464,20 +464,11 @@ a:hover {
 
 /*landing*/
 
-/* #landing-title {
-    font-family: "Routed", Arial, Helvetica, sans-serif;
-    font-size: 5rem;
-    line-height: 5rem;
-    padding-left: 2rem;
-} */
-
 #landing-arrow {
-    font-family: Calibri, Arial, Helvetica, sans-serif;
     font-size: 10rem;
     position: absolute;
-    bottom: 1rem;
+    bottom: 5rem;
     right: 1rem;
-    z-index: 2;
 }
 
 #landing img {
@@ -485,7 +476,7 @@ a:hover {
     width: auto;
     object-fit: contain;
     position: absolute;
-    bottom: 7rem;
+    bottom: 12rem;
     right: 6.5rem;
     z-index: 3;
     transform: rotate(-10deg);
