@@ -52,7 +52,7 @@ a:hover {
 }
 
 #landing-arrow {
-    font-family: Calibri, Arial, Helvetica, sans-serif;
+    font-family: "Routed";
     font-size: 20rem;
     position: absolute;
     bottom: -2rem;
@@ -83,6 +83,7 @@ a:hover {
     top: 0;
     background-color: #a2ceee;
     z-index: 1;
+    padding: 0;
 }
 
 #about-title {
@@ -92,9 +93,11 @@ a:hover {
     font-size: 10rem;
     line-height: 9rem;
     text-align: left;
+    top: 0;
     position: absolute;
-    top: -3rem;
+    display: block;
     padding-left: 3rem;
+    align-content: start;
 }
 
 #about-description {
@@ -343,7 +346,7 @@ a:hover {
 
 
   /* smartphone */
-  @media only screen and (max-width: 300px), (orientation: portrait) {
+  @media only screen and (max-width: 500px), (orientation: portrait) {
     /*about*/
 #about-top-color {
     width: 100vw;
@@ -355,15 +358,10 @@ a:hover {
 }
 
 #about-title {
-    grid-column-start: 1;
-    grid-column-end: 6;
+    align-items: start;
     font-family: "Routed", Arial, Helvetica, sans-serif;
     font-size: 6rem;
     line-height: 6rem;
-    text-align: left;
-    position: absolute;
-    top: -3rem;
-    padding-left: 3rem;
 }
 
 #about-description {
@@ -415,46 +413,24 @@ a:hover {
 
 /* Section structure */
 .site-title {
-    position: absolute;
     top: -.8rem;
     right: 1rem;
-    font-family: "Routed", Arial, Helvetica, sans-serif;
     font-size: 1rem;
-    z-index: 3;
 }
 
 .section-title {
-    text-align: left;
     font-size: 4rem;
-    font-family: "Routed", Arial, Helvetica, sans-serif;
-    padding-left: 3rem;
 }
 
-.section-image img{
-    position: absolute;
-    display: block;
-    top: 3rem;
-    right: 1rem;
+.section-image img {
     height: 20rem;
-    width: auto;
-    object-fit: cover;
-    z-index: 100;
 }
 
 #section-links {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
     grid-column: 1 / 5;
-    align-items: start;
-    justify-content: start;
-    position: absolute;
-    bottom: 0rem;
-    width: 100%;
 }
 
 .article a{
-    text-align: left;
     font-size: 1.3rem;
 }
 
@@ -466,19 +442,13 @@ a:hover {
 
 #landing-arrow {
     font-size: 10rem;
-    position: absolute;
     bottom: 5rem;
     right: 1rem;
 }
 
 #landing img {
     height: 5rem;
-    width: auto;
-    object-fit: contain;
-    position: absolute;
     bottom: 12rem;
     right: 6.5rem;
-    z-index: 3;
-    transform: rotate(-10deg);
 }
   }
