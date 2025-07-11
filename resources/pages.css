@@ -69,7 +69,7 @@ html {
 
   .contents {
     padding-left: 2rem;
-    width: 18rem;
+    width: 20rem;
   }
 
   .contents a {
@@ -133,7 +133,7 @@ a .page-title-resources:hover {
 /* Menu */
 .menu-group {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0rem;
     right: 1rem;
     z-index: 3;
@@ -250,7 +250,7 @@ a .page-title-resources:hover {
 
 .title {
     font-size: 5.5rem;
-    line-height: 5.8rem;
+    line-height: 5.5rem;
 }
 
 .recs {
@@ -281,7 +281,7 @@ a .page-title-resources:hover {
 
 .about {
     font-size: 2rem;
-    line-height: 2.8rem;
+    line-height: 2.5rem;
     text-align: left;
     width: 75%;
 }
@@ -294,50 +294,20 @@ a .page-title-resources:hover {
 }
 
 .text {
-    font-size: 1.7rem;
-    line-height: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
-.q-edu, .q-re, .q-safe, .q-org {
+.q {
     font-family: "Routed", Helvetica, sans-serif;
     font-size: 1.6rem;
     text-transform: uppercase;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: .5rem;
 }
-
-.q-edu { background-color: #E3ED55;}
-.q-safe { background-color: #62A8E5;}
-.q-org { background-color: #FF665E;}
-.q-re { background-color: #FC7ECD;}
 
 .q2 {
     font-family: "Routed", Helvetica, sans-serif;
     font-size: 2rem;
     text-transform: uppercase;
-}
-
-.q3-safe {
-    font-family: "Routed", Helvetica, sans-serif;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    background-color: #62a8e550;
-}
-
-.q3-re {
-    font-family: "Routed", Helvetica, sans-serif;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    background-color: #fc7ece41;
-}
-
-.q3-org {
-    font-family: "Routed", Helvetica, sans-serif;
-    font-size: 1.6rem;
-    text-transform: uppercase;
-    background-color: #ff665e43;
-    color: black;
 }
 
 .text-image-desktop {
@@ -438,14 +408,6 @@ li {
         margin-top: 5rem;
     }
 
-    .menu-education, .menu-resources, .menu-safety, .menu-organizing {
-        text-decoration: underline;
-    }
-
-    .menu-group {
-        background-color: #E6E7E8;
-    }
-
     .pullout-text {
         display: none;
     }
@@ -473,7 +435,6 @@ li {
     
     .title {
         font-size: 3rem;
-        line-height: 3.7rem;
     }
     
     .section-img {
@@ -495,7 +456,7 @@ li {
     
     .about {
         font-size: 1.6rem;
-        line-height: 2rem;
+        line-height: 1.9rem;
         text-align: left;
         width: 100%;
     }
