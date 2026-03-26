@@ -186,7 +186,7 @@ a .page-title-resources:hover {
 }
 
 .menu-resources a:hover>div {
-    color: #FC7ECD;
+    background-color: #FC7ECD;
     cursor: pointer;
     transition: .1s ease-in-out;
 }
@@ -198,7 +198,7 @@ a .page-title-resources:hover {
     transition: .1s ease-in-out;
 }
 .menu-safety a:hover>div {
-    color: #62A8E5;
+    background-color: #62A8E5;
     cursor: pointer;
     transition: .1s ease-in-out;
 }

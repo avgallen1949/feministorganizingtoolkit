@@ -51,7 +51,7 @@ a:hover {
     line-height: 15vw;
     padding-left: 2rem;
     position: absolute;
-    bottom: 5rem;
+    bottom: 3rem;
 }
 
 @keyframes fadein1 {
