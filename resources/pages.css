@@ -38,6 +38,11 @@ html {
     transition: right 500ms ease-out 20ms;
 }
 
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
   .side-menu-resources:hover {
     right: -3%;
     background-color: #FC7ECD;
