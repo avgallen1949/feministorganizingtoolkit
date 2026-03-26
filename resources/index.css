@@ -16,10 +16,6 @@ html, body {
     margin: 0;
     padding: 0;
   }
-
-  a {
-    cursor: pointer;
-  }
   
 
 @font-face {
@@ -43,7 +39,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+.article:hover {
     cursor: pointer;
 }
 
@@ -361,10 +357,6 @@ a:hover {
     width: 100%;
 }
 
-#section-links:hover {
-    cursor: pointer;
-}
-
 .article a{
     text-align: left;
     font-size: 1.5rem;
@@ -414,7 +406,7 @@ a:hover {
 .site-title {
     position: absolute;
     top: -1rem;
-    right: 1rem;
+    right: 2rem;
     font-family: "Routed", Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
     z-index: 3;
