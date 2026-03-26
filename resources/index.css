@@ -16,6 +16,10 @@ html, body {
     margin: 0;
     padding: 0;
   }
+
+  a {
+    cursor: pointer;
+  }
   
 
 @font-face {
@@ -163,14 +167,26 @@ a:hover {
     height: auto;
 }
 
-#smaller {
+.smaller {
     font-family: "Akkurat", Arial, Helvetica, sans-serif;
-    font-size: 1.3rem;
-    grid-column: 5 / 6;
+    font-size: 1rem;
     grid-row: 4;
     margin: 0;
     padding-right: 2rem;
     padding-bottom: 2rem
+}
+
+#zero{
+    grid-column: 1 / 6;
+    margin-left: 2rem;
+}
+
+#one{
+    grid-column: 4 / 6;
+}
+
+#two{
+    grid-column: 5 / 6;
 }
 
 #pix1, #pix2, #pix3, #pix4 {
@@ -252,7 +268,7 @@ a:hover {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #f94036;
+    background-color: #f13e23;
     z-index: 1;
 }
 
@@ -343,6 +359,10 @@ a:hover {
     position: absolute;
     bottom: 0rem;
     width: 100%;
+}
+
+#section-links:hover {
+    cursor: pointer;
 }
 
 .article a{
