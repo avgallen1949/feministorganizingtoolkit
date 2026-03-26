@@ -1,18 +1,15 @@
-$("#filter").on("click", "a[filter]", function(){
-  
+$("#filter a").on("click", function(){
     $("#filter a").removeAttr("selected");
     let what = $(this).attr("filter");
-    $(this).attr("selected", "");  
-    
+    $(this).attr("selected", "");
+
     if (what == "all") {
-      $("#_list .r").show();
+        $("#_list .r").show();
     } else {
-      $("#_list .r").show();
-      $("#_list .r:not([type='" + what + "'])").hide();
+        $("#_list .r").show();
+        $("#_list .r:not([data-type='" + what + "'])").hide();
     }
-  
-    
-  });
+});
 
   
   
@@ -35,16 +32,13 @@ $("#filter").on("click", "a[filter]", function(){
         if(entry["mirror/0"] && entry["mirror/0"].length !== 0){   _links += `<a href='`+entry["mirror/0"]+` target="_blank'> </a>`; }
 
         
-        let d = $(`<div class='r' type='` + (entry.type).toLowerCase() + `'> 
-            <a href="` + entry["mirror/0"] + `" target="_blank" class="_link">
-              <div class="_title">
-              
-              <h2 title>`
-              + entry.title +     
-              `</h2></div>
-              
-            </div>`)
-          .appendTo("#_list");
+ let d = $(`<div class='r' data-type='` + (entry.type).toLowerCase() + `'>
+    <a href="` + entry["mirror/0"] + `" target="_blank" class="_link">
+        <div class="_title">
+            <h2>` + entry.title + `</h2>
+        </div>
+    </a>
+</div>`).appendTo("#_list");
         
 
     
@@ -58,12 +52,6 @@ $("#filter").on("click", "a[filter]", function(){
       $(".count_education").text($(".r[type*='education']").length);
       $(".count_org").text($(".r[type*='org']").length);
       $(".count_organization").text($(".r[type*='organization']").length);
-    });  
-  
-  
-  
-      
-      // write
-      
+    });        
   
     })
