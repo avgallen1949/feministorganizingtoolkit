@@ -1,0 +1,501 @@
+* {
+    font-size: 12px;
+    font-family: Helvetica, sans-serif;
+}
+
+html {
+    background-color: #E6E7E8;
+    width: 100vw;
+    overflow-x: hidden;
+    left: 0;
+}
+
+html, body {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;    
+    margin: 0;
+    padding: 0;
+  }
+  
+
+@font-face {
+    font-family: "Routed";
+    src: url(./routed-gothic-narrow.ttf);
+}
+
+@font-face {
+    font-family: "Akkurat";
+    src: url(./Akkurat-Normal.otf);
+}
+
+strong {
+    font-family: "Akkurat", sans-serif;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*landing*/
+
+#landing-title {
+    font-family: "Routed", Arial, Helvetica, sans-serif;
+    font-size: 15vw;
+    line-height: 15vw;
+    padding-left: 2rem;
+    position: absolute;
+    bottom: 5rem;
+}
+
+@keyframes fadein1 {
+  0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 1;}
+  60%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadein2 {
+  0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 0;}
+  60%  {opacity: 1;}
+  80%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadein3 {
+  0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 0;}
+  60%  {opacity: 0;}
+  80%  {opacity: 1;}
+  100% {opacity: 1;}
+}
+
+@keyframes fadein4 {
+  0%   {opacity: 0;}
+  20%  {opacity: 0;}
+  40%  {opacity: 0;}
+  60%  {opacity: 0;}
+  80%  {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+#pix5, #pix6, #pix7, #pix8 {
+    height: 20rem;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin: 0;
+}
+
+#pix5 {
+    bottom: 10rem;
+    left: 12rem;
+    transform: rotate(-5deg);
+    animation-name: fadein1;
+    animation-duration: 3s;
+}
+
+#pix6 {
+    bottom: 25%;
+    left: 35%;
+    transform: rotate(15deg);
+    animation-name: fadein2;
+    animation-duration: 3s;
+}
+
+#pix7 {
+    bottom: 10rem;
+    right: 10rem;
+    transform: rotate(-10deg); 
+    animation-name: fadein3;
+    animation-duration: 3s;
+}
+
+#pix8 {
+    bottom: 15%;
+    right: 40rem;
+    transform: rotate(-10deg); 
+    animation-name: fadein4;
+    animation-duration: 3s;
+}
+
+/*about*/
+#about-top-color {
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #70aaf8;
+    z-index: 1;
+    padding: 0;
+}
+
+#about-title {
+    font-family: "Routed", Arial, Helvetica, sans-serif;
+    font-size: 12vw;
+    line-height: 12vw;
+    padding-left: 1rem;
+    position: absolute;
+    top: 5rem;
+    margin: 0;
+}
+
+#about-description {
+    grid-column: 4 / 6;
+    grid-row: 2;
+    font-family: "Akkurat", Arial, Helvetica, sans-serif;
+    font-size: 1.85rem;
+    margin: 0;
+    margin-right: 2rem;
+    padding-top: 9rem;
+    height: auto;
+}
+
+#smaller {
+    font-family: "Akkurat", Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    grid-column: 5 / 6;
+    grid-row: 4;
+    margin: 0;
+    padding-right: 2rem;
+    padding-bottom: 2rem
+}
+
+#pix1, #pix2, #pix3, #pix4 {
+    height: 20rem;
+    width: auto;
+    object-fit: contain;
+    position: absolute;
+    margin: 0;
+}
+
+#pix4 {
+    bottom: 10rem;
+    left: 12rem;
+    transform: rotate(-5deg);
+}
+
+#pix3 {
+    bottom: 25%;
+    left: 35%;
+    transform: rotate(15deg);
+}
+
+#pix2 {
+    bottom: 10rem;
+    right: 10rem;
+    transform: rotate(-10deg); 
+}
+
+#pix1 {
+    bottom: 15%;
+    right: 40rem;
+    transform: rotate(-10deg); 
+}
+
+#feminist {
+    top: 40%;
+    left: 5%;
+    transform: rotate(15deg);
+}
+
+#org {
+    top: 20%;
+    right: 45%;
+    transform: rotate(-10deg); 
+}
+
+#toolkit {
+    bottom: 10%;
+    right: 15%;
+    transform: rotate(-10deg); 
+}
+
+/*safety*/
+#safety-top-color {
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fdb2fc;
+    z-index: 1;
+}
+
+/*resources*/
+#resources-top-color {
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fffe4b;
+    z-index: 1;
+}
+
+/*education*/
+#education-top-color {
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f94036;
+    z-index: 1;
+}
+
+/*organizing*/
+#organizing-top-color {
+    width: 100vw;
+    height: 4rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #e6e7e8;
+    z-index: 1;
+}
+
+
+/*section styles*/
+#landing {
+    background-color: #e6e7e8;
+    top: -1rem;
+    display: contents;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    position: sticky;
+}
+
+#about {
+    background-color :#e6e7e8;
+}
+
+#safety {
+    background-color: #70abf8aa;
+}
+
+#resources {
+    background-color: #fdb2fc99;
+}
+
+#education {
+    background-color: #ffff4b8e;
+}
+
+#organizing {
+    background-color: #f94036c8;
+}
+
+/* Section structure */
+
+#organizing, #education, #resources, #safety, #about, #landing {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto auto 1fr auto;
+    column-gap: 0;
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+.section-title {
+    text-align: left;
+    font-size: 5rem;
+    font-family: "Routed", Arial, Helvetica, sans-serif;
+    padding-left: 3rem;
+}
+
+.section-image img{
+    position: absolute;
+    display: block;
+    top: 3rem;
+    right: 1rem;
+    height: 40rem;
+    width: auto;
+    object-fit: cover;
+    z-index: 100;
+}
+
+#section-links {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    grid-column: 1 / 3;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    bottom: 0rem;
+    width: 100%;
+}
+
+.article a{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.article a:hover{
+    color: oklab(0% 0 0 / 0.5);
+}
+
+.article {
+    border-bottom: 1px black solid;
+    padding: 1.5rem;
+    width: 100%;
+    padding-left: 3rem;
+}
+
+.menu-bar {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.menu-bar a {
+    font-family: "Routed", Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.light {
+    color: rgba(0, 0, 0, 0.500);
+}
+
+.light:hover, .up-arrow:hover, .down-arrow:hover {
+    color: gray;
+}
+
+.menu-line {
+    color: black;
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 0rem;
+}
+
+.site-title {
+    position: absolute;
+    top: -1rem;
+    right: 1rem;
+    font-family: "Routed", Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    z-index: 3;
+}
+
+
+  /* smartphone */
+  @media only screen and (max-width: 600px), (orientation: portrait) {
+    /*about*/
+#about-top-color {
+    height: 2rem;
+}
+
+#about-title {
+    font-size: 6rem;
+    line-height: 6rem;
+}
+
+#about-description {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row: 4;
+    margin: 1rem;
+    font-size: 1.5rem;
+    bottom: 1rem;
+}
+
+#smaller {
+display: none;
+}
+
+#pix1, #pix2, #pix3, #pix4 {
+    height: 10rem;
+}
+
+#feminist, #org, #toolkit {
+    display: none;
+}
+
+#pix4 {
+    top: 35%;
+    left: 5%;
+    transform: rotate(-5deg);
+}
+
+#pix3 {
+    top: 25%;
+    left: 35%;
+    transform: rotate(15deg);
+}
+
+#pix2 {
+    top: 35%;
+    right: 10%;
+    transform: rotate(-10deg); 
+}
+
+#pix1 {
+    top: 15%;
+    right: 0rem;
+    transform: rotate(-10deg); 
+}
+
+/* Section structure */
+.site-title {
+    top: -.8rem;
+    right: 1rem;
+    font-size: 1rem;
+}
+
+.section-title {
+    font-size: 4rem;
+}
+
+.section-image img {
+    height: 20rem;
+}
+
+#section-links {
+    grid-column: 1 / 5;
+}
+
+.article a{
+    font-size: 1.3rem;
+}
+
+#safety-top-color, #education-top-color, #resources-top-color, #organizing-top-color{
+    height: 2rem;
+}
+
+/*landing*/
+
+#landing-arrow {
+    font-size: 10rem;
+    bottom: 5rem;
+    right: 1rem;
+}
+
+#landing img {
+    height: 5rem;
+    bottom: 12rem;
+    right: 6.5rem;
+}
+  }

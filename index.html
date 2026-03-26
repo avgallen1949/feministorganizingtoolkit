@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feminist Organizing Toolkit</title>
+    <link rel="stylesheet" href="./resources/index.css">
+
+    <link rel="icon" type="image/x-icon" href="./resources/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Victor+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+
+    <body>
+    <div class="sections">
+        <div id="landing">
+            <div id="landing-title">FEMINIST<br>ORGANIZING<br>TOOLKIT</div>
+            <div><img id="pix6" src="./resources/hands.png"></div>
+            <div><img id="pix7" src="./resources/education.png"></div>
+            <div><img id="pix5" src="./resources/networks.png"></div>
+            <div><img id="pix8" src="./resources/mega.png"></div>
+        </div>
+
+        <div id="organizing">
+        <div id="organizing-top-color"></div>
+        <p class="site-title">FEMINIST ORGANIZING TOOLKIT</p>
+        <div class="section-image"><img src="./resources/Ways_Of_Organizing_F.gif"></div>
+        <div id="section-links">
+            <div class="article"><a href="./demands.html">MAKE YOUR DEMANDS HEARD<br>how to write and deliver a demand letter</a></div>
+            <div class="article"><a href="./transnational-feminism.html">GLOBAL SOLIDARITY<br>on transnational feminism</a></div>
+            <div class="section-title">ORGANIZING</div>
+        </div>
+        </div>
+
+        <div id="education">
+        <div id="education-top-color"></div>
+        <p class="site-title">FEMINIST ORGANIZING TOOLKIT</p>
+        <div class="section-image"><img src="./resources/Education_F.gif"></div>
+        <div id="section-links">
+            <div class="article"><a href="./reading.html">LET'S GET EDUCATED<br>how to organize a reading group</a></div>
+            <div class="article"><a href="./resource-list.html">OUR RECS<br>reading list</a></div>
+            <div class="section-title">EDUCATION</div>
+        </div>
+        </div>
+
+        <div id="resources">
+        <div id="resources-top-color"></div>
+        <p class="site-title">FEMINIST ORGANIZING TOOLKIT</p>
+        <div class="section-image"><img src="./resources/Resources_F.gif"></div>
+        <div id="section-links">
+            <div class="article"><a href="./interview-fundraising.html">RAISING FUNDS AND HAVING FUN<br>a conversation with the organizer of Buffy Prom</a></div>
+            <div class="article"><a href="./interview-abortion.html">ON THE STATE OF ABORTION<br>a conversation with an abortion provider in Chicago</a></div>
+            <div class="section-title">RESOURCES</div>
+        </div>
+
+        </div>
+
+        <div id="safety">
+        <div id="safety-top-color"></div>
+        <p class="site-title">FEMINIST ORGANIZING TOOLKIT</p>
+        <div class="section-image"><img src="./resources/Safety-Networks_F.gif"></div>
+        <div id="section-links">
+            <div class="article"><a href="./interview-safety.html">SELF-DEFENSE TAKES A VILLAGE<br>a conversation on keeping each other safe</a></div>
+            <div class="article"><a href="./digital-privacy.html">DIGITAL DEFENSE<br>digital privacy for reproductive rights</a></div>
+            <div class="section-title">SAFETY</div>
+        </div>
+        </div>
+
+<div id="about">
+    <div id="about-top-color"></div>
+    <p class="site-title">FEMINIST ORGANIZING TOOLKIT</p>
+    <p id="about-description">Feminist Organizing Toolkit contains information and interviews around creating networks for safety, accessing and supporting resources, expanding knowledge around our current political context, and tactics for organizing with others to keep each other safe.</p>
+    <p id="smaller">Web Design: Avrie Allen<br>Illustrations: Saachi Mehta</p>
+    <p id="about-title">A PLACE<br>TO START</p>
+    <div><img id="pix4" src="./resources/hands.png"></div>
+    <div><img id="pix3" src="./resources/education.png"></div>
+    <div><img id="pix2" src="./resources/networks.png"></div>
+    <div><img id="pix1" src="./resources/mega.png"></div>
+</div>
+    </div>
+    </div>
+<script>
+document.body.style.overflow = 'hidden';
+document.documentElement.style.overflow = 'hidden';
+
+if (!sessionStorage.getItem('visited')) {
+    sessionStorage.setItem('visited', 'true');
+    setTimeout(() => {
+        document.getElementById('about').scrollIntoView({ behavior: 'smooth' });
+        document.body.style.overflow = '';
+        document.documentElement.style.overflow = '';
+    }, 3000);
+} else {
+    document.body.style.overflow = '';
+    document.documentElement.style.overflow = '';
+}
+</script>
+</body>
+
+
+</html>
